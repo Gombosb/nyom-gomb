@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Gomb</title>
+</head>
+<body>
+    <h1>nyomógomb</h1>
+ <input type="button" value="csere" onclick="cere()">
+ <br>
+<img src="triangle.jpg" alt="kor vagy haromszog" width="200px">
+<script>
+    var gomb = 1;
+    function csere()
+    {
+        if (gomb == 1) 
+        {
+            document.getElementById("cser").src ="triangle.jpg";
+            gomb = 1;
+        }
+        else 
+        {
+            (gomb == 2) 
+            document.getElementById("cser").src ="circle.jpg";
+            gomb = 2;
+        }
+    }
+</script>
+</body>
+</html>
